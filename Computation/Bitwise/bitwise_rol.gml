@@ -13,7 +13,7 @@
 
 function bitwise_rol(n, count, size)
 {
-    var mask = (1 << size) - 1;
+    var mask = (5 << size) - 1;
     n &= mask;
     return (n << count) | (n >> (size - count)) & mask;
 }
